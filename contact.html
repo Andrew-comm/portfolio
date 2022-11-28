@@ -21,7 +21,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700&display=swap" rel="stylesheet" /> -->
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
@@ -86,23 +86,21 @@
           <div class="row">
             <div class="col-md-9 mx-auto">
               <div class="contact-form">
-                <form action="">
+                <form action="" onsubmit="sendEmail(); reset(); return false;">
                   <div>
-                    <input type="text" placeholder="Full Name " />
+                    <input type="text" id="fname" placeholder="Full Name " />
                   </div>
                   <div>
-                    <input type="text" placeholder="Phone Number" />
+                    <input type="text" id="phone" placeholder="Phone Number" />
                   </div>
                   <div>
-                    <input type="email" placeholder="Email Address" />
+                    <input type="email" id="email" placeholder="Email Address" />
                   </div>
                   <div>
-                    <input type="text" placeholder="Message" class="input_message" />
+                    <textarea id="message" placeholder="Message"  rows="4" cols="52" class="input_message" ></textarea>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn_on-hover" onclick="sendEmail()">
-                      Send
-                    </button>
+                    <button type="submit" class="btn_on-hover">Send</button>
                   </div>
                 </form>
               </div>
@@ -127,7 +125,7 @@
             <img src="images/fb.png" alt="" />
           </a>
           <a href="">
-            <img src="images/twitter.png" alt="" />
+            <img src="images/twitter.png" alt="" />@Andrew49079855
           </a>
           <a href="">
             <img src="images/linkedin.png" alt="" />
@@ -139,6 +137,8 @@
       </div>
     </div>
   </section>
+  
+
 
   <!-- end info_section -->
 
@@ -157,36 +157,36 @@
   <script src="js/bootstrap.js"></script>
 
   <script>
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
+   function openNav() {
+       document.getElementById("myNav").style.width = "100%";
+     }
 
-    function closeNav() {
+     function closeNav() {
       document.getElementById("myNav").style.width = "0%";
-    }
-  </script>
+     }
+   </script>
 
-  <script src=
-    "https://smtpjs.com/v3/smtp.js">
-  </script>
+   <script src=https://smtpjs.com/v3/smtp.js></script>
  
-  <script type="text/javascript">
+   <script type="text/javascript">
+
     function sendEmail() {
       Email.send({
         Host: "smtp.gmail.com",
         Username: "ndrwrono2001@gmail.com",
-        Password: "",
-        To: 'ndrwrono2001@gmail.com',
-        From: document.getElementById(),
-        Subject: document.getElementById(),
+        Password: 'htdhudwouqljpbob',
+        To: 'ronovicky692@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "new stuff",
         Body: "Well that was easy!!",
-      })
-        .then(function (message) {
-          alert("Message sent successfully")
-        });
-    }
-  </script>
+       })
+         .then(function (message) {
+           alert("Message sent successfully")
+         });
+     }
+   </script>
 
 </body>
+
 
 </html>
