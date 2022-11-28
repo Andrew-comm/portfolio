@@ -11,6 +11,7 @@ body {
   padding: 90px 0;
 }
 
+
 .layout_padding2 {
   padding: 45px 0;
 }
@@ -43,7 +44,8 @@ body {
 .heading_container h2 {
   font-weight: bold;
   color: #323232;
-  position: relative;
+  width:60%;
+  color:blue;
 }
 
 .heading_container h2::before {
@@ -92,7 +94,7 @@ body {
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   margin: 10px 45px;
   padding: 0;
-  color: #ffffff;
+  color: blueviolet;
   text-align: center;
   position: relative;
   text-transform: uppercase;
@@ -150,9 +152,11 @@ a:focus {
 
 .navbar-brand {
   font-family: 'Raleway', sans-serif;
+  
 }
 
 .navbar-brand img {
+
   width: 45px;
 }
 
@@ -507,7 +511,8 @@ a:focus {
 
 /* contact section */
 .contact_section {
-  background-color: #f9f9f9;
+  background-color: purple;
+
 }
 
 .contact_section .heading_container {
@@ -517,24 +522,31 @@ a:focus {
 }
 
 .contact_section .contact-form {
-  padding: 35px 20px 0 20px;
-  border-radius: 20px;
+  padding: 25px 20px 0 20px;
+  border-radius: 10px;
+  background-color:white;
+  
 }
 
 .contact_section .contact-form input {
   border: none;
   outline: none;
   background-color: transparent;
-  width: 100%;
+  width: 60%;
   margin: 15px 0;
   padding: 10px 20px;
   border: 1px solid #909090;
   border-radius: 12px;
 }
 
+
 .contact_section .contact-form input.input_message {
-  height: 175px;
+  margin:10px 0;
+  padding:20px;
+  outline:none;
+  border-radius:20px;
 }
+
 
 .contact_section .contact-form input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.4);
